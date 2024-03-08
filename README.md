@@ -1,4 +1,4 @@
-#flask calculator
+# Flask calculator
 
 To run this project you run the program by writing in the teminal python3 index.py
 when the program runs a webpage is displayed a homepage is displayed and in the navigation bar
