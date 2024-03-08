@@ -1,0 +1,52 @@
+{% extends "index.html"%}
+
+{% block maincontent%}
+
+
+<form class="container mt-3" action="{{url_for('calculate')}}" method="post">
+    <div class="row">
+        <div class="col-lg-2 col-md-3">
+            <input type="number" name="first_number" class="form-control" placeholder="insert number"required>
+        </div>
+
+        <div class="col-lg-2">
+             <select id="select operation" class="form-control" name="operations" placeholder="select operation" required>
+                <option value="" >select operation...</option>
+                <option value="add" >+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">x</option>
+                <option value="divide">/</option>
+             </select>
+        </div>
+
+
+
+        <div class="col-lg-2 col-md-3">
+            <input type="number" name="second_number" class="form-control" placeholder="insert number" required>
+
+        </div>
+
+
+
+        <div class="row mt-3">
+            <div class="col-lg-1">
+                <div class="text-center">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+                <input type="text" class="form-control" placeholder="result" value="{{result}}" >
+        </div>
+
+        <div class="col-lg-4">
+               <button type="submit" value="calculate" class="btn btn-dark" style="color:hsl(170, 58%, 77%)">calculate</button>
+        </div>
+
+    </div>
+
+</form>
+
+
+{% endblock %}
